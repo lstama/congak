@@ -17,7 +17,7 @@ and then join it with '+' (for addition) or '-' (for substraction).
 ## Functions
 Then, you can use the pattern for generating problem set by using `problem_generator.generate_<sum/substract>_problem(pattern, problem_count)`. You can also combine multiple problem set with `list(itertool.chain())`.
 
-After that, you can export the generated worksheet (and solution) with `docx_exporter.export_<problem/solution>_to_docx(problem_set, filename)`.
+After that, you can export the generated worksheet (and solution) to .docx with `docx_exporter.export_<problem/solution>_to_docx(problem_set, filename)`.
 
 ## Example:
 ### Code:
