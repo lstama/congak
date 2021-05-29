@@ -4,11 +4,11 @@ import itertools
 
 easy = generate_sum_problem('x+x', 20)
 medium_1 = generate_sum_problem('x+1y', 7)
-medium_2 = generate_substract_problem('1y-x', 8)
-hard_1 = generate_substract_problem('2y-x', 2)
+medium_2 = generate_subtract_problem('1y-x', 8)
+hard_1 = generate_subtract_problem('2y-x', 2)
 hard_2 = generate_sum_problem('x+2y', 2)
 hard_3 = generate_sum_problem('1y+2y', 2)
-hard_4 = generate_substract_problem('2y-1y', 2)
+hard_4 = generate_subtract_problem('2y-1y', 2)
 hard_5 = generate_sum_problem('xy+xy', 1)
 
 all_problem = list(itertools.chain(
