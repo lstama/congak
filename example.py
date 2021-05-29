@@ -1,4 +1,4 @@
-from problem_generator import generate_sum_problem, generate_substract_problem
+from problem_generator import generate_sum_problem, generate_subtract_problem
 from docx_exporter import export_problem_to_docx, export_solution_to_docx
 import itertools
 
