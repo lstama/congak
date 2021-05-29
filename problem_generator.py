@@ -68,7 +68,7 @@ def generate_all_sum_problem (pattern: str):
                 ))
     return generated_problem_and_answer
 
-def generate_all_substract_problem (pattern: str):
+def generate_all_subtract_problem (pattern: str):
     first, second = pattern.split('-', 2)
     generated_first = generate_possible_number(first)
     generated_second = generate_possible_number(second)
@@ -97,12 +97,12 @@ def generate_sum_problem(pattern: str, count : int = 0):
     random.shuffle(generated_problem)
     return generated_problem[:count]
 
-def generate_substract_problem(pattern: str, count : int = 0):
+def generate_subtract_problem(pattern: str, count : int = 0):
     # x/X : 1-9, y/Y : 0-9
     if not re.match(r"^[1-9xX][0-9xyXY]*\-[1-9xX][0-9xyXY]*$", pattern):
         return -1
     pattern = pattern.lower()
-    generated_problem = generate_all_substract_problem(pattern)
+    generated_problem = generate_all_subtract_problem(pattern)
     if generated_problem == -1:
         return -1
     if count <= 0 or count > len(generated_problem):
