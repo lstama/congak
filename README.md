@@ -22,14 +22,14 @@ After that, you can export the generated worksheet (and solution) to .docx with 
 ## Example:
 ### Code:
 ``` python
-from problem_generator import generate_sum_problem, generate_substract_problem
+from problem_generator import generate_sum_problem, generate_subtract_problem
 from docx_exporter import export_problem_to_docx, export_solution_to_docx
 import itertools
 
 easy = generate_sum_problem('x+x', 20)
 medium_1 = generate_sum_problem('x+1y', 7)
-medium_2 = generate_substract_problem('1y-x', 8)
-hard_1 = generate_substract_problem('2y-x', 2)
+medium_2 = generate_subtract_problem('1y-x', 8)
+hard_1 = generate_subtract_problem('2y-x', 2)
 hard_2 = generate_sum_problem('x+2y', 2)
 hard_3 = generate_sum_problem('1y+2y', 1)
 
