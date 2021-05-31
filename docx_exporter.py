@@ -3,9 +3,6 @@ from docx.shared import Pt
 
 def export_problem_to_docx(problems: list, name: str = 'problem'):
     problem_document = Document()
-    run = problem_document.add_paragraph().add_run()
-    font = run.font
-    font.size = Pt(16)
     table = problem_document.add_table(rows=0, cols=2)
     table.autofit = True
     problems_count = len(problems)
@@ -35,9 +32,6 @@ def export_problem_to_docx(problems: list, name: str = 'problem'):
 
 def export_solution_to_docx(problems: list, name: str = 'solution'):
     solution_document = Document()
-    run = solution_document.add_paragraph().add_run()
-    font = run.font
-    font.size = Pt(16)
     table = solution_document.add_table(rows=0, cols=2)
     table.autofit = True
     problems_count = len(problems)

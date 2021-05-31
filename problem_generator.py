@@ -80,7 +80,7 @@ def generate_all_subtract_problem (pattern: str):
             if generated_first_int[x] > generated_second_int[y]:
                 generated_problem_and_answer.append((
                     f'{generated_first[x]} - {generated_second[y]} =',
-                    generated_first_int[x] + generated_second_int[y]
+                    generated_first_int[x] - generated_second_int[y]
                     ))
     return generated_problem_and_answer
 
